@@ -1,0 +1,116 @@
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #ffffff;
+  padding: 2rem 1.5rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  display: flex; 
+  flex-direction: column; 
+}
+
+.user-profile {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.user-profile img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+
+.user-profile h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.nav-menu {
+  list-style: none;
+  flex-grow: 1; /* Space between Menu and Logout */
+}
+
+.menu-item {
+  display: flex; /* <<-- Icon and text in front of each other */
+  align-items: center; /* <<-- vertically bring to the center */
+  gap: 1rem;
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-item:hover {
+  background-color: #f0f2f5;
+}
+
+.menu-item.active {
+  background-color: #5A4FCF;
+  color: #ffffff;
+}
+
+.logout-menu {
+  list-style: none;
+}
+
+
+
+.link-style {
+  text-decoration: none;
+  color: inherit; 
+}
+
+
+.profile-picture {
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.profile-picture:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(90, 79, 207, 0.5);
+}
+
+
+
+.profile-picture-container {
+    position: relative; /* Icon portion */
+    display: inline-block; /* Image container */
+    cursor: pointer;
+}
+
+.profile-picture {
+    
+    transition: filter 0.3s ease;
+}
+
+.profile-picture-container:hover .profile-picture {
+    filter: brightness(0.7); 
+}
+
+.edit-icon {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background-color: #ffffff;
+    color: #5A4FCF; 
+    padding: 0.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    
+    
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.3s ease;
+}
+
+.profile-picture-container:hover .edit-icon {
+    
+    opacity: 1;
+    transform: scale(1);
+}

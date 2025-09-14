@@ -1,0 +1,309 @@
+/* --- Base and Layout Styles--- */
+.group-details-container {
+    flex-grow: 1;
+    padding: 2rem;
+    background-color: #f0f2f5;
+}
+
+.group-details-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.group-details-header h1 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.group-details-header p {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 0.5rem;
+}
+
+.group-actions {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.action-btn {
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.action-btn.edit-btn {
+    background-color: #e0e0e0;
+    color: #333;
+}
+.action-btn.edit-btn:hover {
+    background-color: #d0d0d0;
+}
+
+.action-btn.delete-btn {
+    background-color: #ffe0e0;
+    color: #c53030;
+}
+.action-btn.delete-btn:hover {
+    background-color: #f7baba;
+}
+
+.group-details-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.members-section h2, .expenses-section h2 {
+    font-size: 1.3rem;
+    margin: 0; /* Changed from margin-bottom */
+}
+
+/* --- Member Section Styles --- */
+.add-member-form {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.add-member-form input {
+    flex-grow: 1;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.add-member-form button {
+    background-color: #5A4FCF;
+    color: white;
+    border: none;
+    padding: 0 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.members-list {
+    list-style: none;
+    padding: 0;
+}
+
+.members-list li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem 0;
+}
+
+.member-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.member-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.member-name {
+    font-weight: 500;
+}
+
+.member-email {
+    font-size: 0.8rem;
+    color: #888;
+}
+
+.remove-member-btn {
+    background: none;
+    border: none;
+    color: #c53030;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 5px;
+    border-radius: 50%;
+    transition: background-color 0.2s ease;
+}
+.remove-member-btn:hover {
+    background-color: #ffe0e0;
+}
+
+
+.confirmation-dialog {
+    padding: 1rem;
+    text-align: center;
+}
+.confirmation-dialog h2 {
+    margin-bottom: 1rem;
+}
+.confirmation-dialog p {
+    margin-bottom: 2rem;
+    color: #666;
+}
+.confirmation-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.confirmation-buttons button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.cancel-btn {
+    background-color: #e0e0e0;
+}
+.confirm-delete-btn {
+    background-color: #c53030;
+    color: white;
+}
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.modal-form label {
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: #555;
+}
+.modal-form input, .modal-form textarea, .modal-form select {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+.modal-form button.form-btn {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #5A4FCF;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+/* --- NEW STYLES for Expenses Section --- */
+.expenses-section .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.add-expense-btn {
+    background-color: #5A4FCF;
+    color: white;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.add-expense-btn:hover {
+    background-color: #4e44b8;
+}
+
+.expense-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.no-expenses {
+    text-align: center;
+    color: #777;
+    padding: 2rem;
+    background-color: #fafafa;
+    border-radius: 8px;
+}
+
+.expense-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border: 1px solid #e9e9e9;
+    border-radius: 8px;
+}
+
+.expense-icon {
+    font-size: 1.5rem;
+    color: #5A4FCF;
+}
+
+.expense-details {
+    flex-grow: 1;
+}
+
+.expense-description {
+    font-weight: 600;
+    color: #333;
+}
+
+.expense-paid-by {
+    font-size: 0.85rem;
+    color: #777;
+}
+
+.expense-amount {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.expense-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #555;
+    padding: 5px;
+    border-radius: 50%;
+    transition: background-color 0.2s ease;
+}
+.icon-btn:hover {
+    background-color: #f0f0f0;
+}
+.icon-btn.delete {
+    color: #c53030;
+}
+.icon-btn.delete:hover {
+    background-color: #ffe0e0;
+}

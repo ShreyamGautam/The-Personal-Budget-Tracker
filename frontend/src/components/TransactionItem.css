@@ -1,0 +1,60 @@
+.transaction-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.item-details {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.item-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.item-info h4 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.item-info p {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.item-amount span {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.item-amount-delete {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #FF5A5A; 
+}
+
+
+.edit-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #5A4FCF;
+}

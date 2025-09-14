@@ -1,0 +1,118 @@
+.expense-container {
+  flex-grow: 1;
+  padding: 2rem;
+  background-color: #f0f2f5;
+}
+
+.expense-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.expense-header h1 {
+  font-weight: 600;
+}
+
+.add-expense-btn {
+  background-color: #5A4FCF;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-expense-btn:hover {
+  background-color: #4a40b0;
+}
+
+.expense-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.chart-section, .list-section {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.chart-section {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    min-height: 400px; 
+    display: flex; 
+    flex-direction: column; 
+}
+
+.list-section h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.expense-list {
+    list-style: none;
+}
+
+
+.search-bar-container {
+  margin-bottom: 1.5rem;
+}
+
+.search-bar-container input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+
+
+.filters-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    gap: 1rem;
+}
+
+.filters-container select {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    flex-grow: 1;
+}
+
+.date-filters {
+    display: flex;
+    gap: 0.5rem;
+    background-color: #e0e0e0;
+    padding: 0.3rem;
+    border-radius: 8px;
+}
+
+.date-filters button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: transparent;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.date-filters button.active {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    color: #5A4FCF;
+}

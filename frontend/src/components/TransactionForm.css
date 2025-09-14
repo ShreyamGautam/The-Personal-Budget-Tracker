@@ -1,0 +1,93 @@
+.transaction-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.transaction-form h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.form-group {
+    position: relative; /* Picker  */
+}
+
+.transaction-form input {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%; /* Ensure inputs take full width */
+  box-sizing: border-box; 
+}
+
+/* Icon and Title group styling */
+.icon-title-group {
+    display: flex;
+    gap: 0.5rem; /* Input aur button in between space */
+    align-items: center;
+}
+
+.icon-title-group input {
+    flex-grow: 1; 
+}
+
+.icon-picker-btn {
+    background-color: #f0f0f0; 
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    font-size: 1.2rem; /* Emoji font */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    flex-shrink: 0; /* Button shrink stop */
+}
+
+.icon-picker-btn:hover {
+    background-color: #e0e0e0;
+}
+
+/* Emoji Picker position adjust*/
+.emoji-picker-react {
+    position: absolute;
+    z-index: 1000;
+    margin-top: 0.5rem;
+    left: 50%; /* Center the picker */
+    transform: translateX(-50%); /* Center the picker */
+}
+
+
+.transaction-form button[type="submit"] {
+  background-color: #5A4FCF;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.transaction-form button[type="submit"]:hover {
+  background-color: #4a40b0;
+}
+
+/* Default styling for the emoji picker container */
+.emoji-picker-react {
+    width: 90%; /* Adjust width as needed */
+    max-width: 320px; /* Max width */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.picker-container {
+    position: absolute;
+    z-index: 1000;
+    top: 130px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+}

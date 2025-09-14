@@ -1,0 +1,28 @@
+.transactions-container {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.transactions-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.transactions-header h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.transactions-header a {
+  text-decoration: none;
+  color: #5A4FCF;
+  font-weight: 500;
+}
+
+.transactions-list {
+  list-style: none;
+}
