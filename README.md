@@ -75,7 +75,7 @@ I have built a rich set of features to provide a complete user experience:
 
     ```
     MONGO_URL=<your_mongodb_connection_string>
-    JWT_SECRET=<your_jwt_secret_key>
+    JWT_SECRET=<your_jwt_key>
     ```
 
 3.  **Setup the Frontend:**
