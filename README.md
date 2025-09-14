@@ -1,3 +1,4 @@
+
 # Expense Tracker - A Full-Stack MERN Application
 
 This is a comprehensive personal finance and budget tracking application designed to help users manage their income, expenses, and budgets effectively. Built from the ground up with the MERN stack, this application provides a clean, responsive user interface and a powerful, secure backend. It supports both individual financial tracking and collaborative group expense management.
@@ -108,11 +109,19 @@ Here are a few glimpses of the application:
 
 **Login Page**
 
+<img width="703" height="840" alt="Login" src="https://github.com/user-attachments/assets/35c921c6-e0b3-4520-8045-03b856811719" />
+
+
 **Main Dashboard**
+<img width="1471" height="937" alt="Dashboard" src="https://github.com/user-attachments/assets/b9c578dc-aebd-43a0-bfba-9ddb19bbfd3b" />
+
 
 **Income Page with Filters**
+<img width="1472" height="799" alt="Income with Filters" src="https://github.com/user-attachments/assets/520a612b-edeb-46c5-bdd8-b9ec8d34ba4c" />
+
 
 **Group Details Page**
+<img width="1506" height="904" alt="Group Details" src="https://github.com/user-attachments/assets/997f613e-7353-4dc3-a278-4aa6d94e8cf5" />
 
 -----
 
