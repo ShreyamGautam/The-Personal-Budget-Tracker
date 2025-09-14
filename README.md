@@ -1,14 +1,10 @@
-Of course. Here is a detailed and attractive README file for your project, written in Markdown. You can copy and paste this directly into a `README.md` file in your project's root directory.
-
------
-
 # Expense Tracker - A Full-Stack MERN Application
 
 This is a comprehensive personal finance and budget tracking application designed to help users manage their income, expenses, and budgets effectively. Built from the ground up with the MERN stack, this application provides a clean, responsive user interface and a powerful, secure backend. It supports both individual financial tracking and collaborative group expense management.
 
 ## ✨ Features
 
-We have built a rich set of features to provide a complete user experience:
+I have built a rich set of features to provide a complete user experience:
 
 ### Core Personal Finance
 
