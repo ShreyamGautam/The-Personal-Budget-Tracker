@@ -13,23 +13,23 @@ We have built a rich set of features to provide a complete user experience:
 ### Core Personal Finance
 
   * **Transaction Management:** Full CRUD (Create, Read, Update, Delete) functionality for both income and expense entries.
-  * [cite\_start]**Dynamic Dashboard:** An at-a-glance view of your complete financial status, including total balance, income, expenses, recent transactions, and visual charts. [cite: 69, 106]
-  * [cite\_start]**Budget Management:** Set monthly budgets for different categories, track your spending with real-time progress bars, and get visual alerts when you overspend. [cite: 16, 18, 71]
+**Dynamic Dashboard:** An at-a-glance view of your complete financial status, including total balance, income, expenses, recent transactions, and visual charts. 
+**Budget Management:** Set monthly budgets for different categories, track your spending with real-time progress bars, and get visual alerts when you overspend. 
   * **Data Visualization:** Interactive and dynamic charts on every page.
-      * [cite\_start]**Bar charts** to show monthly income trends. [cite: 112]
-      * [cite\_start]**Line charts** to show monthly expense trends. [cite: 113]
-      * [cite\_start]**Donut charts** for a financial overview and category-wise breakdowns. [cite: 111]
-  * [cite\_start]**Advanced Filtering & Search:** Easily find transactions with a real-time search bar and advanced filters for categories and date ranges. [cite: 39, 48]
+      * **Bar charts** to show monthly income trends.
+      * **Line charts** to show monthly expense trends. 
+      * **Donut charts** for a financial overview and category-wise breakdowns. 
+  * **Advanced Filtering & Search:** Easily find transactions with a real-time search bar and advanced filters for categories and date ranges. 
   * **PDF Reports:** Download your income or expense history as a formatted PDF document.
 
 ### User & Group Management
 
-  * [cite\_start]**Secure User Authentication:** Complete user registration and login system using JWT for security. [cite: 30] Pages are protected, and data is private to each user.
+  * **Secure User Authentication:** Complete user registration and login system using JWT for security.  Pages are protected, and data is private to each user.
   * **Personalized Profile:** Users can upload and update their own profile pictures, and their name is displayed throughout the app.
   * **Group Expense Management (Splitwise Clone):**
-      * [cite\_start]Create groups for shared activities (e.g., trips, roommates). [cite: 33]
+      * Create groups for shared activities (e.g., trips, roommates).
       * Add or remove members from groups.
-      * [cite\_start]**[Coming Soon]** Add shared expenses, split them equally or unequally, and calculate balances to see who owes whom. [cite: 34, 35]
+      * Add shared expenses and split them equally or unequally .
 
 ## 🛠️ Tech Stack
 
