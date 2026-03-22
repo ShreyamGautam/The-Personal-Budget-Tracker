@@ -69,14 +69,27 @@ const MainLayout = () => {
     }
   };
 
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
+
   return (
     <div className="App">
       <Sidebar 
         onLogout={handleLogout} 
         user={user} 
         onUpdatePicture={handleProfilePictureUpdate}
+        isOpen={isMobileMenuOpen}
+        toggleMenu={toggleMobileMenu}
+        closeMenu={closeMobileMenu}
       />
-      <main className="main-content">
+      <main className={`main-content ${isMobileMenuOpen ? 'sidebar-open' : ''}`}>
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="/income" element={<Income />} />

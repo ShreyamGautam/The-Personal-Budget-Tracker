@@ -55,13 +55,10 @@
   list-style: none;
 }
 
-
-
 .link-style {
   text-decoration: none;
   color: inherit; 
 }
-
 
 .profile-picture {
     cursor: pointer;
@@ -73,8 +70,6 @@
     box-shadow: 0 0 15px rgba(90, 79, 207, 0.5);
 }
 
-
-
 .profile-picture-container {
     position: relative; /* Icon portion */
     display: inline-block; /* Image container */
@@ -82,7 +77,6 @@
 }
 
 .profile-picture {
-    
     transition: filter 0.3s ease;
 }
 
@@ -102,15 +96,58 @@
     justify-content: center;
     align-items: center;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    
-    
     opacity: 0;
     transform: scale(0);
     transition: all 0.3s ease;
 }
 
 .profile-picture-container:hover .edit-icon {
-    
     opacity: 1;
     transform: scale(1);
+}
+
+/* --- Responsive & Mobile Toggle Styles --- */
+
+.mobile-menu-toggle {
+  display: none;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1100;
+  background: white;
+  color: #5A4FCF;
+  border: 1px solid #5A4FCF;
+  padding: 0.6rem;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+@media (max-width: 1024px) {
+  .mobile-menu-toggle {
+    display: flex;
+  }
+
+  .sidebar {
+    position: fixed;
+    left: -280px;
+    transition: left 0.3s ease-in-out;
+    z-index: 1000;
+  }
+
+  .sidebar.open {
+    left: 0;
+  }
 }

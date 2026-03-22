@@ -3,9 +3,18 @@
   padding: 2rem;
   background-color: #f0f2f5;
 }
-.budget-container h1 {
-  margin-bottom: 1.5rem;
+
+@media (max-width: 900px) {
+  .budget-container {
+    padding: 1rem;
+    padding-top: 4rem;
+  }
+  
+  .budget-content {
+    grid-template-columns: 1fr;
+  }
 }
+
 .budget-content {
   display: grid;
   grid-template-columns: 1fr 2fr;

@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
+const { MongoMemoryServer } = require('mongodb-memory-server');
 const transactionRoutes = require('./routes/transactionRoutes');
 const budgetRoutes = require('./routes/budgetRoutes');
 const userRoutes = require('./routes/userRoutes');
@@ -21,16 +22,27 @@ app.use('/api/v1', transactionRoutes);
 app.use('/api/v1', budgetRoutes);
 app.use('/api/v1', userRoutes);
 app.use('/api/v1', groupRoutes);
-// Nested route for group expenses
 app.use('/api/v1/groups/:groupId/expenses', groupExpenseRoutes); 
 
 // DB Connection Function
 const connectDB = async () => {
     try {
-        await mongoose.connect(process.env.MONGO_URL);
+        console.log('Attempting to connect to MongoDB Atlas...');
+        await mongoose.connect(process.env.MONGO_URL, {
+            serverSelectionTimeoutMS: 5000 // 5 seconds timeout
+        });
         console.log('Database Connected! Jhakass!');
     } catch (error) {
-        console.error('DB Connection Error:', error);
+        console.warn('Atlas connection failed. Falling back to In-Memory Database...');
+        try {
+            const mongoServer = await MongoMemoryServer.create();
+            const mongoUri = mongoServer.getUri();
+            await mongoose.connect(mongoUri);
+            console.log('Connected to In-Memory MongoDB! (Data will not be persisted)');
+        } catch (innerError) {
+            console.error('Fatal: Could not start In-Memory MongoDB:', innerError);
+            process.exit(1);
+        }
     }
 };
 
